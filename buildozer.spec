@@ -37,7 +37,7 @@ version = 2.2
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.3.0,sqlite3,reportlab,openpyxl,pygame
+requirements = python3,kivy==2.3.0,sqlite3,reportlab,openpyxl
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
