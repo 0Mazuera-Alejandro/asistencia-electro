@@ -1,4 +1,12 @@
-name: Build APK
+- name: Prepare Android SDK licenses
+  run: |
+    mkdir -p $HOME/.android
+    echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $HOME/.android/repositories.cfg
+    yes | buildozer android accept_sdk_license || true
+
+- name: Build APK
+  run: |
+    buildozer android debug
 
 on:
   push:
